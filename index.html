@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>App - menu </title>
+		<title>App</title>
 		<meta charset="UTF-8">
 	</head>
 
@@ -39,10 +39,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             height: 100%;
           }
 
-          *{
-                font-family: helvetica;
-              }
-
           body {
             display: flex;
             align-items: center;
@@ -60,7 +56,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
                     user-select: none;
           }
 
-
           span {
             box-sizing: border-box;
           }
@@ -73,23 +68,23 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             padding: 10vh 1.5vh;
             border-radius: 6vh;
             position: relative;
-            height: 75%;
+            height: 75%
           }
 
           .screen {
-            background: linear-gradient(#A9A9A9, #696969);
+            background: linear-gradient(to top, #5f8bd3 11.5vh, #3f74ca 11.5vh);
+            display: flex;
+            flex-wrap: wrap;
             padding: 1.5vh;
             width: 42vh;
-            height: 95%;
           }
 
           .icon {
-            width: 34vh;
-            height: 8vh;
+            width: 6vh;
+            height: 6vh;
             border-radius: 1.5vh;
             background-color: #f7f8fa;
-            margin: 1vh;
-            font-size: 3.0vh;
+            margin: 2vh;
           }
 
           .icon:active {
@@ -99,7 +94,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
           .icon:nth-last-of-type(-n+4) {
             margin-top: 3vh;
           }
-
 
 
           .home, .camera, .proximity, .speaker, .silence, .volume-up, .volume-down, .sleep {
@@ -181,45 +175,47 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
           .sleep {
             right: -0.75vh;
           }
-
-          h2 {
-		  font-size: 4.0vh;
-		  vertical-align:middle;
-		  color: #fff
-		}
-
-	.content {
-	height: 100%;
-    display: block;
-    text-align: center;
-
-	}
-
  </style>
 
 
   <div class="iphone">
   <div class="screen">
-  	<div class= "content">
-        <h2>The Reduce App</h2>
-
     <button class="icon"></button>
-
-   <button class="icon"
-   onclick="location.href='gro_list.html'"
-   >Grocery list</button>
     
-
-    <button class="icon"
-   onclick="location.href='maps.html'"
-   >Maps</button>
-
-
-   
-        </div>
+   <button class="icon"
+   onclick="location.href='menu.html'"
+   >
+    <img src="https://www.clipartmax.com/png/middle/34-348905_big-image-reduce-reuse-recycle-logo-png.png" width="85%">
+  </button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
+    <button class="icon"></button>
   </div>
 
-  <button class="home" title="Home" onclick="location.href='index.html'"></button>
+  <button class="home" title="Home"></button>
   <span class="speaker" title="Speaker"></span>
   <span class="camera" title="Camera"></span>
   <span class="proximity" title="Proximity Sensor"></span>
