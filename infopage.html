@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>info page</title>
-		<meta charset="UTF-8">
-	</head>
+  <head>
+    <title>App</title>
+    <meta charset="UTF-8">
+  </head>
 
 
 
@@ -11,7 +11,8 @@
 /*
 https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6ea59809 
 */
-</script>
+
+    </script>
 
 
 
@@ -22,11 +23,23 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             height: 100%;
           }
 
+             h1 {
+      font-size: 4.0vh;
+      color: #fff;
+      word-wrap: break-word;
+        word-break: normal;
+
+    }
+
           body {
             display: flex;
             align-items: center;
             justify-content: center;
           }
+
+        p {word-wrap: break-word;
+          word-break: normal;
+}
 
           button {
             border: none;
@@ -37,8 +50,7 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none;
-
-                                  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
           }
 
@@ -162,25 +174,54 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
           .sleep {
             right: -0.75vh;
           }
+
+          .website :-webkit-scrollbar { 
+    display: none;}
+
+
  </style>
 
 
   <div class="iphone">
-		  <div class="screen">
-		<p>Info page</p>
+      <div class="screen" >
+    <div class="mapouter">
+      <div class="gmap_canvas">
 
-          <object data='https://www.readersdigest.co.uk/lifestyle/home-garden/how-to-shop-sustainably' 
-        type='application/pdf' 
-        width='100%' 
-        height='100%'>
-      </object>
+        <h1 style="text-align: center;">How to live sustainably in Edinburgh</h1>
+        <p>Here is a a collection of good guides on how to live more sustainably, while you stay
+        in Edinburgh. This is a simple an small collection, but it is a starter!</p>
+
+      <object class="Website" data='https://moralfibres.co.uk/edinburgh-ethical-shopping-guide/' width='100%' height='50%'; standby="Website is loading, please wait.";> </object>
+
+      <br>
+      <p>Here is a a collection of good guides on how to live more sustainably, while you stay
+        in Edinburgh. This is a simple an small collection, but it is a starter!</p>
+
+      <br>
+
+      <object class="Website" data='https://moralfibres.co.uk/edinburgh-ethical-shopping-guide/' width='100%' height='50%'; standby="Website is loading, please wait.";> </object>
+
+      <br>
+      <br>
+
+      <p>Here is a a collection of good guides on how to live more sustainably, while you stay
+        in Edinburgh. This is a simple an small collection, but it is a starter!</p>
+
+    </div>
 
 
+      <style>
+      .mapouter{text-align:right;height:100%;width:100%;}
+      .gmap_canvas {overflow-y:scroll; 
+                    padding: 0.5vh;
+                    height:100%;
+                    width:100%;}
+      </style>
 
     </div>
   </div>
 
-  <button class="home" title="Home"    onclick="location.href='menu.html'"></button>
+  <button class="home" title="Home"    onclick="location.href='maps_menu.html'"></button>
   <span class="speaker" title="Speaker"></span>
   <span class="camera" title="Camera"></span>
   <span class="proximity" title="Proximity Sensor"></span>
