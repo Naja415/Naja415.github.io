@@ -175,8 +175,24 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             right: -0.75vh;
           }
 
-          .website :-webkit-scrollbar { 
+
+          object ::-webkit-scrollbar { 
     display: none;}
+    
+          object { overflow: -moz-scrollbars-none;
+                    -ms-overflow-style: none;
+                    overflow:hidden;}
+      
+      .mapouter{text-align:right;height:100%;width:100%;}
+      .gmap_canvas {overflow-y:scroll; 
+                    padding: 0.5vh;
+                    height:100%;
+                    width:100%;
+                    overflow: -moz-scrollbars-none;
+                    -ms-overflow-style: none;
+                  }
+
+      .gmap_canvas::-webkit-scrollbar { width: 0 !important }
 
 
  </style>
@@ -190,8 +206,10 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
         <h1 style="text-align: center;">How to live sustainably in Edinburgh</h1>
         <p>Here is a a collection of good guides on how to live more sustainably, while you stay
         in Edinburgh. This is a simple an small collection, but it is a starter!</p>
-
-      <object class="Website" data='https://moralfibres.co.uk/edinburgh-ethical-shopping-guide/' width='100%' overflow-x="hidde" height='50%' standby="Website is loading, please wait.";> </object>
+      
+      <div class="Website">
+      <object  data='https://moralfibres.co.uk/edinburgh-ethical-shopping-guide/' width='100%' height='50%' standby="Website is loading, please wait.";> </object>
+      <div>
 
       <br>
       <p>Here is a a collection of good guides on how to live more sustainably, while you stay
@@ -199,7 +217,9 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
 
       <br>
 
+      <div class="Website">
       <object class="Website" data='https://moralfibres.co.uk/edinburgh-ethical-shopping-guide/' width='100%' height='50%'; standby="Website is loading, please wait.";> </object>
+      <div>
 
       <br>
       <br>
@@ -208,15 +228,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
         in Edinburgh. This is a simple an small collection, but it is a starter!</p>
 
     </div>
-
-
-      <style>
-      .mapouter{text-align:right;height:100%;width:100%;}
-      .gmap_canvas {overflow-y:scroll; 
-                    padding: 0.5vh;
-                    height:100%;
-                    width:100%;}
-      </style>
 
     </div>
   </div>

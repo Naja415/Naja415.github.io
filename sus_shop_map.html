@@ -46,6 +46,15 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             box-sizing: border-box;
           }
 
+               h2 {
+      font-size: 3.0vh;
+      color: #fff;
+      word-wrap: break-word;
+      text-align: center;
+
+    }
+
+
           .iphone, .screen {
             border: 0.5vh solid #525c6b;
           }
@@ -167,7 +176,9 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
 
   <div class="iphone">
 		  <div class="screen">
-		<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1jwc8gn0qi1dnBPsOC1qApmAJqgeT7Mzg&hl=en" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
+		<div class="mapouter"><div class="gmap_canvas">
+    <h2>Map over all eco-shops</h2>
+<iframe width="100%" height="100%" id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1jwc8gn0qi1dnBPsOC1qApmAJqgeT7Mzg&hl=en" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
   </div>
 
   <button class="home" title="Home"    onclick="location.href='maps_menu.html'"></button>
