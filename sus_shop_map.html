@@ -12,23 +12,7 @@
 https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6ea59809 
 */
 
-    $(function() {
-  var timeout;
-
-  $(".icon")
-    .on("mousedown touchstart", function() {
-      timeout = setTimeout(function() {
-        $(".iphone").addClass("wiggle");
-      }, 1000);
-    })
-    .on("mouseup touchend", function() {
-      clearTimeout(timeout);
-    });
-
-  $(".home").click(function() {
-    $(".iphone").removeClass("wiggle");
-  });
-});</script>
+    </script>
 
 
 
@@ -54,7 +38,7 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none;
-              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
           }
 
@@ -70,15 +54,17 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             padding: 10vh 1.5vh;
             border-radius: 6vh;
             position: relative;
-            height: 75%
+            height: 75%;
+
           }
 
           .screen {
-            background: linear-gradient(to top, #5f8bd3 11.5vh, #3f74ca 11.5vh);
+            background: linear-gradient(#A9A9A9, #696969);
             display: flex;
             flex-wrap: wrap;
             padding: 1.5vh;
-            width: 42vh;
+           width: 42vh;
+            height: 95%;
           }
 
           .icon {
@@ -86,7 +72,7 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             height: 6vh;
             border-radius: 1.5vh;
             background-color: #f7f8fa;
-            margin: 2vh;
+            margin: 1.5vh;
           }
 
           .icon:active {
@@ -96,7 +82,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
           .icon:nth-last-of-type(-n+4) {
             margin-top: 3vh;
           }
-
 
           .home, .camera, .proximity, .speaker, .silence, .volume-up, .volume-down, .sleep {
             position: absolute;
@@ -181,43 +166,11 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
 
 
   <div class="iphone">
-  <div class="screen">
-    <button class="icon"></button>
-    
-   <button class="icon"
-   onclick="location.href='menu.html'"
-   >
-    <img src="https://www.clipartmax.com/png/middle/34-348905_big-image-reduce-reuse-recycle-logo-png.png" width="85%">
-  </button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
-    <button class="icon"></button>
+		  <div class="screen">
+		<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://www.google.com/maps/d/u/0/viewer?hl=en&ll=55.94643564335181%2C-3.1896544999999605&z=17&fbclid=IwAR36LPbng5VrMlX5qR69HySZDnPwFz4qS3jJCfHXuB5XN3okH189aeymmOQ&mid=1jwc8gn0qi1dnBPsOC1qApmAJqgeT7Mzg" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
   </div>
 
-  <button class="home" title="Home"></button>
+  <button class="home" title="Home"    onclick="location.href='maps_menu.html'"></button>
   <span class="speaker" title="Speaker"></span>
   <span class="camera" title="Camera"></span>
   <span class="proximity" title="Proximity Sensor"></span>
