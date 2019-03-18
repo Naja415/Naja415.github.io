@@ -27,7 +27,7 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
 
              h1 {
       font-size: 4.0vh;
-      color: #fff;
+      color: black;
       word-wrap: break-word;
         word-break: normal;
 
@@ -39,9 +39,18 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
             justify-content: center;
           }
 
-        p {word-wrap: break-word;
-          word-break: normal;
+        p {
           text-align: center;
+
+           -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for WebKit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 }
 
           button {
@@ -211,7 +220,6 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
     <div class="mapouter">
       <div class="gmap_canvas">
 
-        <p>
         <h1 style="text-align: center;">How to live sustainably in Edinburgh</h1>
         
         <p style="text-align: center;">Here is a a collection of good guides on how to live more sustainably, while you stay
@@ -223,12 +231,14 @@ https://medium.com/@landonschropp/building-a-killer-iphone-layout-with-css-a24f6
         Here is a link for the Moral Fibres guide on    <a href="https://moralfibres.co.uk/edinburgh-ethical-shopping-guide">Ethical Shopping</a> in Edinburgh 
 
         and here is a pdf from <a href=" https://data.edinburghopendata.info/dataset/408a1d87-b428-4103-9c34-71598f93c0c0/resource/a31eb242-a252-456c-a1bf-1742b4a1cb86/download/communalguidefinal.pdf"> Recycle for Edinburgh</a> As every city recycles a little differently, here is a quick guide for recycling in Edinburgh. This includes what can be recycled and what different colored bins mean in Edinburgh
-        <br>
-        <br>
         </p>
+        <br>
+        <br>
+
 
         <h3 style="text-align: center;">The Eco Larder and The Refillery</h3>
         <h4 style="text-align: center;">The Eco Larder</h4>
+       
         <p>"The Eco Larder is a Social Enterprise on a mission to create Plastic Free Edinburgh. We provide groceries, lifestyle goods, baby items and many more gems that help us live without single use plastics.
         <br> 
         By purchasing from The Eco Larder, be it in the shop, wholesale or through our Monthly Subscription Boxes,  you are helping us to continue our social mission in creating #plasticfreeedinburgh. Some of the work we do includes providing free educational workshops on creating zero waste products to the public as well the Plastic Free Edinburgh Badge program creating waste accountability for companies. Together we can use our spending power to change the world for the better." <a href="https://www.theecolarder.com/">Read more here</a> 
